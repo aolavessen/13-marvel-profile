@@ -4,3 +4,85 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+
+.body {
+  margin: 0;
+  width: 100vw;
+  background: yellow;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  // position: relative;
+
+}
+.header {
+  margin: 0;
+  width: 100vw;
+  background-color: #2F4F4F;
+  min-height: 8vh;
+  // max-width: 92vw;
+  font-size: 2rem;
+
+
+}
+
+.header-title {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.boss-container {
+  width: 70rem;
+  background: pink;
+  display: flex;
+  flex-grow: 1;
+  margin: auto;
+  min-height: 150vh;
+}
+
+.left-sidebar {
+  // margin: auto;
+  width: 20rem;
+  background-color: yellow;
+  // min-height: 40vh;
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // align-items: center;
+}
+
+.main-photo {
+
+
+}
+
+.main-title {
+
+}
+
+.creators {
+  // display: flex;
+  // flex-direction: column;
+}
+.right-container {
+
+  background-color: green;
+  // min-height: 60vh;
+  width: 50rem;
+}
+
+.modal {
+  // min-width: 100vw;
+  // background: rgba(0, 0, 0, 0.9);
+  // z-index: 1;
+}
+
+.modal-card {
+  // background: lightgrey;
+  // z-index: 1;
+  // width: 70rem;
+  // position: absolute;
+  // top: 50%;
+  // left: 6.25%;
+}
