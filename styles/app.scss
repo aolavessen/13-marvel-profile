@@ -34,7 +34,7 @@
 
 .boss-container {
   width: 70rem;
-  background: pink;
+  // background: pink;
   display: flex;
   flex-grow: 1;
   margin: auto;
@@ -44,7 +44,7 @@
 .left-sidebar {
   // margin: auto;
   width: 20rem;
-  background-color: yellow;
+  // background-color: yellow;
   // min-height: 40vh;
   // display: flex;
   // flex-direction: column;
@@ -52,7 +52,8 @@
   // align-items: center;
 }
 
-.main-photo {
+.pic {
+  // margin: auto;
 
 
 }
@@ -66,23 +67,64 @@
   // flex-direction: column;
 }
 .right-container {
+  display: grid;
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
 
-  background-color: green;
+  // background-color: green;
   // min-height: 60vh;
   width: 50rem;
 }
 
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+}
+
+.character-list {
+  // display: flex;
+  // flex-direction: row;
+  // background: purple;
+
+
+}
+
+.book__list {
+
+}
+
+.characters {
+  // border-bottom: black;
+}
+
+.comics-list {
+
+}
+
+.comics-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+}
+
 .modal {
-  // min-width: 100vw;
-  // background: rgba(0, 0, 0, 0.9);
-  // z-index: 1;
+  min-width: 100vw;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
 }
 
 .modal-card {
-  // background: lightgrey;
-  // z-index: 1;
-  // width: 70rem;
-  // position: absolute;
-  // top: 50%;
-  // left: 6.25%;
+  margin: auto;
+  background: lightgrey;
+  z-index: 1;
+  width: 70rem;
+  position: absolute;
+  top: 50%;
+  left: 6.25%;
 }
