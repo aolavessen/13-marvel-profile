@@ -1,4 +1,4 @@
-`use strict`;
+'use strict';
 
 export default class CharacterView {
 
@@ -6,17 +6,18 @@ export default class CharacterView {
     this.element = document.createElement(`div`);
     this.element.classList.add(`character`);
 
-    this.element.innerHTML =
-    `<div class="characters-pic"></div>
-     <p class="characters-name"><p>`;
+    this.element.innerHTML = `
+      <div class="character__pic"></div>
+      <h3 class="character__name"></h3>
+    `;
+    this.data = data;
 
-     this.data = data;
-
-     this.renderCharacterPic();
+    this.renderCharacterPic();
+    // this.renderCharacterName();
   }
 
   renderCharacterPic() {
-    this.element.querySelector(`.character-pic`).innerHTML =
-    `<img class="character-pic__image" src="${this.data.thumbnail.path}.${this.data.thumbnail.extension}" alt="">`
+    this.element.querySelector(`.character__pic`).innerHTML =
+    `<img class="characters-pic__image" src="${this.data.thumbnail.path}.${this.data.thumbnail.extension}" alt="">`;
   }
 }

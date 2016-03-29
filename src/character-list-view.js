@@ -1,8 +1,8 @@
-`use strict`;
-import CharacterView from `character-view`;
-export default class CharListView {
+'use strict';
+import CharacterView from 'character-view';
+export default class CharacterListView {
   constructor(element, characters) {
-    this.element =element;
+    this.element = element;
     this.characters = characters;
 
     this.renderNewCharacters();
@@ -11,7 +11,7 @@ export default class CharListView {
   renderNewCharacters() {
     this.characters.forEach((character) => {
       const charView = new CharacterView(character);
-      this.element.appenChild(charView.element);
+      this.element.appendChild(charView.element);
     });
   }
 }

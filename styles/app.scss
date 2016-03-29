@@ -4,127 +4,164 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import '__variables';
 
-
-.body {
+body {
   margin: 0;
   width: 100vw;
-  background: yellow;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  // position: relative;
-
-}
-.header {
-  margin: 0;
-  width: 100vw;
-  background-color: #2F4F4F;
-  min-height: 8vh;
-  // max-width: 92vw;
-  font-size: 2rem;
-
+  position: relative;
 
 }
 
-.header-title {
+
+nav {
+  background: $brand-primary;
   color: white;
-  font-size: 1.25rem;
+  margin: 0;
+  font-size: 2rem;
+  font-family: $brand-display;
+
 }
 
-.boss-container {
-  width: 70rem;
-  // background: pink;
+.navbar__text {
+  margin: 0;
+  margin-left: 5rem;
+  font-family: $brand-display;
+}
+
+main {
+  width: 60rem;
+  background: $brand-white;
   display: flex;
   flex-grow: 1;
   margin: auto;
-  min-height: 150vh;
 }
 
-.left-sidebar {
-  // margin: auto;
-  width: 20rem;
-  // background-color: yellow;
-  // min-height: 40vh;
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  // align-items: center;
+
+.series-details-sidebar {
+  background: $brand-white;
+  width: 30%;
+  margin: $gutter;
 }
 
-.pic {
-  // margin: auto;
-
-
+.main-pic {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.main-title {
-
+.main-pic:before {
+  display: block;
+  padding-top: 100%;
+  content: '';
 }
 
-.creators {
-  // display: flex;
-  // flex-direction: column;
-}
-.right-container {
-  display: grid;
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-
-  // background-color: green;
-  // min-height: 60vh;
-  width: 50rem;
+.main-pic__image {
+  position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  max-width: 100%;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-grow: 1;
 
+.main-pic__heading {
+  margin-left: 1rem;
+  font-family: $brand-sans;
 }
 
-.character-list {
-  // display: flex;
-  // flex-direction: row;
+.main-pic__years {
+  margin-left: 1rem;
+  font-family: $brand-sans;
+  font-size: .7rem;
+}
+
+.creators-heading {
+  margin-left: 1rem;
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.creator-names {
+  margin-left: 1rem;
+  font-family: $brand-sans;
+}
+
+.characters__heading {
+  font-family: $brand-display;
+  font-size: 1.5rem;
+  border-bottom: $brand-border;
+}
+
+.sub-main {
   // background: purple;
-
-
+  width: calc(70% - #{$gutter} - #{$gutter});
 }
 
-.book__list {
+.character__pic {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 
+  &:before {
+    display: block;
+    padding-top: 100%;
+    content: '';
+  }
 }
 
 .characters {
-  // border-bottom: black;
-}
-
-.comics-list {
 
 }
 
-.comics-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-grow: 1;
-
+.characters-pic__image {
+  position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  max-width: 100%;
 }
+
 
 .modal {
+  display: none;
   min-width: 100vw;
-  background: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  background: rgba(0, 0, 0, .8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   z-index: 1;
+
+  &--active {
+    display: block;
+  }
 }
 
 .modal-card {
-  margin: auto;
-  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+
+  background: white;
   z-index: 1;
   width: 70rem;
   position: absolute;
   top: 50%;
   left: 6.25%;
+
+}
+
+.close-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: flex-end;
+  border: 0;
+  background: white;
 }
