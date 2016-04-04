@@ -7,7 +7,7 @@ export default class SeriesInfoView {
     this.renderMainImage();
     this.renderTitle();
     this.renderMainPicYears();
-    this.renderCreaters();
+    this.renderCreators();
   }
   renderMainImage() {
     this.element.querySelector(`.main-pic`).innerHTML =

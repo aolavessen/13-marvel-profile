@@ -5,6 +5,7 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 @import '__variables';
+@import '__side-bar';
 
 body {
   margin: 0;
@@ -41,64 +42,10 @@ main {
 }
 
 
-.series-details-sidebar {
-  background: $brand-white;
-  width: 30%;
-  margin: $gutter;
-}
 
-.main-pic {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.main-pic:before {
-  display: block;
-  padding-top: 100%;
-  content: '';
-}
-
-.main-pic__image {
-  position:  absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-  max-width: 100%;
-}
-
-
-.main-pic__heading {
-  margin-left: 1rem;
-  font-family: $brand-sans;
-}
-
-.main-pic__years {
-  margin-left: 1rem;
-  font-family: $brand-sans;
-  font-size: .7rem;
-}
-
-.creators-heading {
-  margin-left: 1rem;
-  border-bottom: $brand-border;
-  font-family: $brand-display;
-}
-
-.creator-names {
-  margin-left: 1rem;
-  font-family: $brand-sans;
-}
-
-.characters__heading {
-  font-family: $brand-display;
-  font-size: 1.5rem;
-  border-bottom: $brand-border;
-}
 
 .sub-main {
-  // background: purple;
+  background: $brand-white;
   width: calc(70% - #{$gutter} - #{$gutter});
 }
 
@@ -115,6 +62,14 @@ main {
 }
 
 .characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+.character {
+  width: 28%;
+  margin: $gutter;
 
 }
 
@@ -125,8 +80,45 @@ main {
 	bottom: 0;
 	right: 0;
   max-width: 100%;
+  border-radius: 0.4rem;
+
 }
 
+.comics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.comic {
+  width: 28%;
+  margin: 1rem;
+}
+
+.comic-pic {
+position: relative;
+width: 100%;
+overflow: hidden;
+
+  &:before {
+  display: block;
+  padding-top: 100%;
+  content: '';
+}
+
+}
+
+.generic {
+  position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  max-width: 100%;
+  border-radius: 0.4rem;
+
+}
 
 .modal {
   display: none;
@@ -152,7 +144,7 @@ main {
   background: white;
   z-index: 1;
   width: 70rem;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 6.25%;
 

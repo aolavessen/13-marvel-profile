@@ -14,10 +14,14 @@ export default class CharacterView {
 
     this.renderCharacterPic();
     // this.renderCharacterName();
+    this.renderCharacterName();
   }
 
   renderCharacterPic() {
     this.element.querySelector(`.character__pic`).innerHTML =
     `<img class="characters-pic__image" src="${this.data.thumbnail.path}.${this.data.thumbnail.extension}" alt="">`;
+  }
+  renderCharacterName() {
+    this.element.querySelector(`.character__name`).innerHTML = `<h3 class="character__name">${this.data.name}</h3>`;
   }
 }
