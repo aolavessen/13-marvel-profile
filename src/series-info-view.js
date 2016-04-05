@@ -7,12 +7,12 @@ export default class SeriesInfoView {
     this.renderMainImage();
     this.renderTitle();
     this.renderMainPicYears();
-    this.renderCreators();
+    this.renderCreaters();
   }
   renderMainImage() {
     this.element.querySelector(`.main-pic`).innerHTML =
-  `<img class="main-pic__image" src="${this.data.thumbnail.path}.${this.data.thumbnail.extension}" alt="">`;
-  }
+  `<img class="main-pic__image" src="${this.data.thumbnail.path}.${this.data.thumbnail.extension}" alt="">`};
+
   renderTitle() {
     this.element.querySelector(`.main-pic__heading`).innerText = this.data.title;
   }
@@ -27,9 +27,6 @@ export default class SeriesInfoView {
       const creatorEl = document.createElement(`p`);
       creatorEl.innerText = creator.name;
       creatorList.appendChild(creatorEl);
-      // Make a new `li` to represent a creator
-      // Fill in the creator li with the creator name
-      // Append the li to the creators list
     });
   }
 

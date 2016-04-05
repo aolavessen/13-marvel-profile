@@ -1,6 +1,6 @@
 'use strict';
 import CharacterView from 'character-view';
-export default class CharacterListView {
+export default class CharListView {
   constructor(element, characters) {
     this.element = element;
     this.characters = characters;

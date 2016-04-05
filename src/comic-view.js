@@ -12,6 +12,7 @@ export default class ComicView {
     <div class="comic-number">${data.issueNumber}</div>
     <div class="comic-name">${data.title}</div>
     <button class="read-more">Read More</button>
+    <div id="modal" class="modal--actuve modal">
     <div class="modal">
       <div class="modal-card">
       <button class="close-button">X</button>
@@ -21,6 +22,17 @@ export default class ComicView {
     `;
 
     this.data = data;
+    this.triggerModal();
   }
-
-}
+    triggerModal() {
+      const button = this.element.querySelector(`.read-more`);
+      const close = this.element.querySelector(`.close-button`);
+      const modal = this.element.querySelector(`#modal`);
+      button.addEventListener(`click`, () => {
+        modal.classList.toggle(`modal--active`);
+      });
+      close.addEventListener(`click`, () => {
+        modal.classList.toggle(`modal--active`);
+      });
+    }
+  }
