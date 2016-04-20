@@ -9,7 +9,7 @@ export default class CharacterView {
     this.element.innerHTML = `
       <div class="character__pic"></div>
       <h3 class="character__name">${data.name}</h3>
-      <button class="read-more">Read More</button>
+
       <div id ="character-modal" class="character-modal--active character-modal">
       <div id="character-modal-card">
       <p class="character-modal-title">${data.name}</p>
