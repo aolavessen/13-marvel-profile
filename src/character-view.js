@@ -8,20 +8,22 @@ export default class CharacterView {
 
     this.element.innerHTML = `
       <div class="character__pic"></div>
-      <h3 class="character__name"></h3>
+      <h3 class="character__name">${data.name}</h3>
+      <button class="read-more">Read More</button>
       <div id ="character-modal" class="character-modal--active character-modal">
       <div id="character-modal-card">
-      <button class="character-close-button">X</button>
       <p class="character-modal-title">${data.name}</p>
       <p class="character-modal-text">${data.description}</p>
+      <button class="character-close-button">X</button>
+      </div>
       </div>
     `;
     this.data = data;
 
     this.renderCharacterPic();
 
-      //  this.renderCharacterName();
-      // this.triggerCharacterModal();
+
+      //  this.triggerCharacterModal();
   }
 
   renderCharacterPic() {
@@ -32,10 +34,10 @@ export default class CharacterView {
     this.element.querySelector(`.character_name`).innerHTML = `<h3 class="character_name">${this.data.name}</h3>`;
   }
   triggerCharacterModal() {
-    const character = this.element.querySelector(`.character_pic`);
+    const button = this.element.querySelector(`.read-more`);
     const characterClose = this.element.querySelector(`character-close-button`);
     const characterModal = this.element.querySelector(`#character-modal`);
-    hero.addEventListener(`click`, () => {
+      button.addEventListener(`click`, () => {
       characterModal.classList.toggle(`character-modal--active`);
     });
     characterClose.addEventListener(`click`, () => {

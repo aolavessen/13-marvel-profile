@@ -15,8 +15,8 @@ export default class ComicView {
     <div id="modal" class="modal--active modal">
     <div class="modal">
       <div class="modal-card">
-      <button class="close-button">X</button>
       <p class="modal-text">${data.description}</p>
+      <button class="close-button">X</button>
       </div>
     </div>
     `;

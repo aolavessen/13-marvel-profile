@@ -180,7 +180,7 @@ overflow: hidden;
   background: white;
 }
 
-.hero-modal {
+.character-modal {
   display: block;
   min-width: 100vw;
   min-height: 100vh;
@@ -194,19 +194,19 @@ overflow: hidden;
 
 }
 
-.hero-modal--active {
+.character-modal--active {
     display: none;
 
 
   }
 
-.hero-modal-title {
+.character-modal-title {
   font-family: $brand-display;
   margin-left: 3rem;
   }
 
 
-.hero-modal-card {
+.character-modal-card {
   display: flex;
   flex-direction: column;
 
@@ -220,7 +220,7 @@ overflow: hidden;
 
 }
 
-.hero-close-button {
+.character-close-button {
   width: 1.5rem;
   height: 1.5rem;
   align-self: flex-end;
