@@ -12,7 +12,7 @@ export default class ComicView {
     <div class="comic-number">${data.issueNumber}</div>
     <div class="comic-name">${data.title}</div>
     <button class="read-more">Read More</button>
-    <div id="modal" class="modal--actuve modal">
+    <div id="modal" class="modal--active modal">
     <div class="modal">
       <div class="modal-card">
       <button class="close-button">X</button>
