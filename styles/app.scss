@@ -92,7 +92,7 @@ main {
 }
 
 .comic {
-  width: 28%;
+  width: 20%;
   margin: 1rem;
 }
 
@@ -138,6 +138,7 @@ overflow: hidden;
 
 
 .modal {
+  margin: auto;
   display: block;
   min-width: 100vw;
   min-height: 100vh;
@@ -148,6 +149,8 @@ overflow: hidden;
   right: 0;
   left: 0;
   z-index: 1;
+  overflow: auto;
+  // padding-right: 5rem;
 }
 
 .modal--active {
