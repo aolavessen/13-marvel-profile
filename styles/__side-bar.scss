@@ -1,0 +1,55 @@
+.series-details-sidebar {
+  background: $brand-white;
+  width: 30%;
+  margin: $gutter;
+}
+
+.main-pic {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.main-pic:before {
+  display: block;
+  padding-top: 100%;
+  content: '';
+}
+
+.main-pic__image {
+  position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  max-width: 100%;
+}
+
+
+.main-pic__heading {
+  margin-left: 1rem;
+  font-family: $brand-sans;
+}
+
+.main-pic__years {
+  margin-left: 1rem;
+  font-family: $brand-sans;
+  font-size: .7rem;
+}
+
+.creators-heading {
+  margin-left: 1rem;
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.creator-names {
+  margin-left: 1rem;
+  font-family: $brand-sans;
+}
+
+.characters__heading {
+  font-family: $brand-display;
+  font-size: 1.5rem;
+  border-bottom: $brand-border;
+}
